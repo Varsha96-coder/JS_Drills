@@ -1,7 +1,7 @@
-module.exports = function values(obj){
-    var getValues = [];
-    for(var i in obj){
-        getValues.push(obj[i]);
-    }
-    return getValues;
-}
+module.exports = function values(obj) {
+  const getValues = [];
+  for (key in obj) {
+    getValues.push(obj[key]);
+  }
+  return getValues;
+};

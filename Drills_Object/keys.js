@@ -1,8 +1,7 @@
-
-module.exports = function keys(obj){
-    var getKeys = [];
-    for(var i in obj){
-        getKeys.push(i.toString());
-    }
-    return getKeys;
-}
+module.exports = function keys(obj) {
+  const getKeys = [];
+  for (key in obj) {
+      getKeys.push(key.toString());
+  }
+  return getKeys;
+};
