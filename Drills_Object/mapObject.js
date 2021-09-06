@@ -1,8 +1,8 @@
 module.exports = function mapObject(obj, cb) {
-  const doMap = [];
+  const doMap = {};
   for (key in obj) {
     doMap.push(`${key}:${cb(obj[key])}`);
-    // doMap[key] = cb(obj[key]);
+    //doMap[key] = cb(obj[key]);
   }
   return doMap;
 };
